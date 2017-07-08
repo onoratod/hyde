@@ -34,6 +34,10 @@
 html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
+body {
+ font-family: Helvetica, sans-serif;
+ font-weight: 100
+}
 @media (min-width: 48em) {
   html {
     font-size: 16px;
