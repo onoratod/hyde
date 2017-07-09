@@ -3,7 +3,7 @@
 
   {% include head.html %}
   
-  <body onload="ran_col()" id = "main">
+  <body onload="ran_col()">
 
     {% include sidebar.html %}
 
@@ -16,7 +16,7 @@
     		var theme = "theme-base-";
     		var themes = ["08", "09","0a","0b","0c","0d","0e","0f"];
     		theme += themes[Math.floor(Math.random() * themes.length)];
-    		document.getElementById('main').class = theme;
+    		document.getElementsByTagName('body')[0].class = theme;
     	}
     </script>
   </body>
