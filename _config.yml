@@ -7,19 +7,19 @@ permalink:        pretty
 
 # Setup
 title:            DO
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+tagline:          'Donato Onorato'
+description:      'Student of Economics, occasional blogger, aspiring coder.'
 url:              http://hyde.getpoole.com
 baseurl:          '/onoratod.github.io/'
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Donato Onorato'
+  url:            
 
 paginate:         5
 
 # Custom vars
-version:          2.1.0
+version:          
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/onoratod
