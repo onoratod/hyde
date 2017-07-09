@@ -94,6 +94,11 @@ h1 {
   font-weight: bold;
 }
 
+.sidebar-about {
+  font-family: "PT Sans", serif;
+  font-size: 14px 
+}
+
 /* Sidebar nav */
 .sidebar-nav {
   margin-bottom: 1rem;
