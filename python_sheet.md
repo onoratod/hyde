@@ -7,6 +7,7 @@ title: Python
 ## Table of Contents
 
 1. [**Strings**](#strings)
+   - [**Basics**](#stringsbasics) 
 	- [**Slicing**](#stringslicing) 
 2. [**Pandas DataFrames**](#dataframes)
 	- [**Working with Indexes**](#indexes) 
@@ -15,6 +16,99 @@ title: Python
 
 
 ## Strings <a name = "strings"></a>
+
+### Basics <a name = "stringsbasics"></a>
+
+Strings are an extremely useful and powerful data type in Python. Basically, strings are just a "list" of characters. Although Python does not support a char type its easy to think of them in this way. As you'd expect its pretty straightforward to create a string:
+
+```python
+In [1]: x = "this is a string"
+
+In [2]: x
+Out[2]: 'this is a string'
+```
+Like Java, you can add or "concatenate" strings together:
+
+```python
+In [3]: x = "Hello"
+
+In [4]: y = "World"
+
+In [5]: z = x + " " + y
+
+In [6]: z
+Out[6]: 'Hello World'
+```
+You can also iterate through strings using a `for` loop:
+
+```python
+In [10]: word = "Doge"
+
+In [11]: for letter in word:
+    ...:     print(letter)
+    ...:     
+D
+o
+g
+e
+```
+It's is also very easy to test for string/substring membership or seeing whether a string you're interested in lies in another string:
+
+```python
+In [20]: x = "Is Doge Home?"
+
+In [21]: def knock_knock(x):
+    ...:     if "Doge" in x:
+    ...:         print("Doge is Home")
+    ...:     else:
+    ...:         print("Doge isn't home!")
+    ...:         
+
+In [22]: knock_knock(x)
+Doge is Home
+```
+
+**Built-in-Functions**
+
+Python has some handy built-in functions for working with strings. Take for instance, the `len` function, which gives us the "length" or number of characters in the string:
+
+```python
+In [23]: word = "Doge"
+
+In [24]: len(word)
+Out[24]: 4
+
+In [25]: word = "Spaces count"
+
+In [26]: len(word)
+Out[26]: 12
+```
+There is also the `format()` function which is powerful for working with and formatting strings. This function uses `{}` as a placeholder for strings:
+
+```python
+In [27]: ordering = "{}, {}, and {}".format("Doge", "Cate", "Duck")
+
+In [28]: print(ordering)
+Doge, Cate, and Duck
+```
+You can also use the ordinal positions of your arguments!
+
+```python
+In [29]: ordering = "{1} is first, {2} is second, and {0} is last".format("Cate"
+    ...: , "Doge", "Duck")
+
+In [30]: ordering
+Out[30]: 'Doge is first, Duck is second, and Cate is last'
+```
+You can also give your arguments names and use that instead:
+
+```python
+In [31]: ordering = "a goes here {a}, b goes here {b}, and c goes all the way ov
+    ...: er there ..... {c}".format(a="A", b="B", c="C")
+
+In [32]: ordering
+Out[32]: 'a goes here A, b goes here B, and c goes all the way over there ..... C'
+```
 
 ### Slicing Strings <a name = "stringslicing"></a>
 
