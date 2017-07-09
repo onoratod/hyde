@@ -3,15 +3,22 @@
 
   {% include head.html %}
   
-  <body>
+  <body class = "return ran_col()">
 
     {% include sidebar.html %}
-    {% inlcude sidebar-title.html %}
-
 
     <div class="content container">
       {{ content }}
     </div>
+
+    <script type="text/javascript">
+    	function ran_col() {
+    		var theme = "theme-base-";
+    		var themes = ["08", "09","0a","0b","0c","0d","0e","0f"];
+    		colors += themes[Math.floor(Math.random() * themes.length)];
+    	}
+    </script>
+
     
   </body>
 
