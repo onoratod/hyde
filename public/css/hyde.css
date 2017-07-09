@@ -37,11 +37,11 @@ html {
 
 body {
  font-family: Helvetica, sans-serif;
- font-weight: 150
+ font-weight: 125
 }
 
 h1, h2, h3, h4, h5, h6 {
- font-family = "Abril Fatface", serif;
+ font-family: "Abril Fatface", serif;
 }
 
 @media (min-width: 48em) {
