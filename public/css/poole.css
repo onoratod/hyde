@@ -48,9 +48,9 @@ body {
 }
 
 html {
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 100
   line-height: 1.5;
 }
 @media (min-width: 38em) {
@@ -64,8 +64,6 @@ body {
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
 }
 
 /* No `:visited` state is required by default (browsers will use `a`) */
