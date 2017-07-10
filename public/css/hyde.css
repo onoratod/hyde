@@ -46,12 +46,12 @@ html {
 }
 
 body {
- font-family: Lato, Helvetica, sans-serif;
+ font-family: "Helvetica Neue", Helvetica, sans-serif;
  font-weight: 300;
 }
 
 h1 {
- font-family: Lato, Helvetica, serif;
+ font-family: "Helvetica Neue", Helvetica, serif;
  font-weight: 300;
 }
 
@@ -95,7 +95,7 @@ h1 {
 }
 
 .sidebar-about {
-  font-family: "PT Sans", serif;
+  font-family: "PT Sans", Helvetica, serif;
   font-size: 14px 
 }
 
