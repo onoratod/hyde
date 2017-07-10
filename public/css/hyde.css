@@ -31,8 +31,6 @@
  * Update the foundational and global aspects of the page.
  */
 
-@import url(//fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
-
 html {
   font-family: Lato, "PT Sans", Helvetica, Arial, sans-serif;
 }
