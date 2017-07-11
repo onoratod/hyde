@@ -68,39 +68,6 @@ In [21]: def knock_knock(x):
 In [22]: knock_knock(x)
 Doge is Home
 ```
-You can also convert strings to upper and lower case easily with `string.lower()` and `string.upper()`:
-
-```python
-In [33]: word = "make me big"
-
-In [34]: word.upper()
-Out[34]: 'MAKE ME BIG'
-
-In [35]: word.lower()
-Out[35]: 'make me big'
-```
-Just as we can `split()` strings we can also `join()` them. `join()` interweaves the provided string into the passed in string:
-
-```python
-In [36]: word = "hyphenate"
-
-In [37]: "-".join(word)
-Out[37]: 'h-y-p-h-e-n-a-t-e'
-```
-Although that was a trivial example, we can use `join()` in other clever ways:
-
-```python
-In [41]: " and ".join(["Doge", "Cate", "Snek"]) 
-Out[41]: 'Doge and Cate and Snek'
-```
-We can also make simple adjustments to strings using `string.replace()` and passing in a few arguments: `string.replace(replace, replace with)`:
-
-```python
-In [42]: sentence = "Cate was evil"
-
-In [43]: sentence.replace("was", "is")
-Out[43]: 'Cate is evil'
-```
 
 
 ### Basic Functions <a name = "stringfunc"></a>
@@ -143,6 +110,40 @@ In [31]: ordering = "a goes here {a}, b goes here {b}, and c goes all the way ov
 
 In [32]: ordering
 Out[32]: 'a goes here A, b goes here B, and c goes all the way over there ..... C'
+```
+
+You can also convert strings to upper and lower case easily with `string.lower()` and `string.upper()`:
+
+```python
+In [33]: word = "make me big"
+
+In [34]: word.upper()
+Out[34]: 'MAKE ME BIG'
+
+In [35]: word.lower()
+Out[35]: 'make me big'
+```
+Just as we can `split()` strings we can also `join()` them. `join()` interweaves the provided string into the passed in string:
+
+```python
+In [36]: word = "hyphenate"
+
+In [37]: "-".join(word)
+Out[37]: 'h-y-p-h-e-n-a-t-e'
+```
+Although that was a trivial example, we can use `join()` in other clever ways:
+
+```python
+In [41]: " and ".join(["Doge", "Cate", "Snek"]) 
+Out[41]: 'Doge and Cate and Snek'
+```
+We can also make simple adjustments to strings using `string.replace()` and passing in a few arguments: `string.replace(replace, replace with)`:
+
+```python
+In [42]: sentence = "Cate was evil"
+
+In [43]: sentence.replace("was", "is")
+Out[43]: 'Cate is evil'
 ```
 
 ### Slicing Strings <a name = "stringslicing"></a>
