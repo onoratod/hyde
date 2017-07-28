@@ -80,7 +80,7 @@ code {
   color: #bf616a;
   background-color: #f9f9f9;
   border-radius: 3px;
-  overflow: scroll;
+  overflow-x: scroll;
 }
 pre {
   display: block;
@@ -93,7 +93,7 @@ pre {
   white-space: pre-wrap;
   /*word-break: break-all;
   word-wrap: break-word;*/
-  overflow: scroll;
+  overflow-x: scroll;
   background-color: #f9f9f9;
 }
 pre code {
@@ -101,7 +101,7 @@ pre code {
   font-size: 100%;
   color: inherit;
   background-color: transparent;
-  overflow-x:scroll;
+  overflow-x: scroll;
 }
 
 
