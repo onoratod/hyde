@@ -79,6 +79,7 @@ code {
   color: #bf616a;
   background-color: #f9f9f9;
   border-radius: 3px;
+  overflow: scroll;
 }
 pre {
   display: block;
@@ -91,7 +92,7 @@ pre {
   white-space: pre-wrap;
   /*word-break: break-all;
   word-wrap: break-word;*/
-  overflow-x: scroll;
+  overflow: scroll;
   background-color: #f9f9f9;
 }
 pre code {
