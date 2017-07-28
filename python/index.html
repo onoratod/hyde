@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>maptile: a Stata program that makes mapping easy</title>
+
+    <link rel="stylesheet" href="/css/projectpage.css">
+    <link rel="stylesheet" href="/css/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>maptile</h1>
+        <h2>A stata program that makes mapping easy.</h2>
+
+        <p>by <a href="http://michaelstepner.com">Michael Stepner</a></p>
+
+        <!--<ul>
+          <li><a href="https://github.com/michaelstepner/binscatter/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/michaelstepner/binscatter/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/michaelstepner/binscatter">View On <strong>GitHub</strong></a></li>
+        </ul>-->
+      </header>
+      <section>
+<p>maptile provides a simple method for mapping a variable in Stata. It divides the areas on the map into groups and shades them according to the value of the variable being plotted. The map itself is drawn using geography templates, which can be <a href="/maptile/geographies">downloaded here</a>. These templates are easy to create and share.</p>
+
+<h3><a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h3>
+
+<p>This map shows 2013 age-adjusted mortality rates for white Americans.</p>
+
+<p><img src="maptile_state_whitemort.svg" alt="maptile example" title="maptile example"></p>
+
+<p>The map was created by running: <code class="outline">maptile mort_white, geo(state)</code>
+
+<h3><a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<p>Open Stata and install maptile by running the commands:<pre class="outline"><code>ssc install maptile<br> ssc install spmap</code></pre></p>
+
+<p>After installing maptile, you can read the documentation by running <code class="outline">help maptile</code>.  The <strong><small>Examples</small></strong> section of the help file contains a clickable walk-through of maptile's various features.</p>
+
+<p>Before you can make a map, you will need to install a geography template. There are <a href="/maptile/geographies">many freely available here</a> for you to install and use.</p>
+
+<h3><a name="slide-deck" class="anchor" href="#slide-deck"><span class="octicon octicon-link"></span></a>Introductory Slide Deck</h3>
+
+<p><a href="http://files.michaelstepner.com/maptile slides 2015-03 _handout.pdf" target=_blank>This slide deck</a> provides a visual introduction to maptile. It explains:</p>
+
+<ul>
+<li><p>how maptile generates the bins</p></li>
+<li><p>how maptile colors the bins</p></li>
+<li><p>methods for comparing subpopulations</p></li>
+<li><p>how to create a new geography template</p></li>
+</ul>
+
+You can also download the <a href="http://files.michaelstepner.com/maptile slides 2015-03 _creation.zip">source files</a>, which include the Stata code to generate every figure shown in the slide deck.
+
+<h3><a name="technical-description" class="anchor" href="#technical-description"><span class="octicon octicon-link"></span></a>Technical Description</h3>
+
+<p>maptile generates choropleth maps, where each area is shaded according to the value of the variable being plotted.  By default, maptile divides the geographic units into equal-sized bins (corresponding to quantiles of the plotted variable), then colors the bins in increasing intensity.</p>
+
+<p>To generate any particular map, maptile uses a 'geography', which is a template for that map.  These need to be <a href="/maptile/geographies">downloaded and installed</a>. If no geography currently exists for the region you want to map, you can make a new one.</p>
+
+<p>maptile requires <strong><small>spmap</small></strong> to be installed, and is largely a convenient interface for using spmap.  As its help file states, "spmap gives the user full control over the formatting of almost every map element, thus allowing the production of highly customized maps".  When using maptile, most of these customizations are stored away in the geography template.  As a result, the syntax for making highly customized maps using maptile can be very simple.  Additionally, the geography templates can be easily shared and used by others.</p>
+
+<h3><a name="acknowledgements" class="anchor" href="#acknowledgements"><span class="octicon octicon-link"></span></a>Acknowledgements</h3>
+
+<p>maptile was built on the shoulders of giants.  Maps are generated using <strong><small>spmap</small></strong>, written by Maurizio Pisati. The geography template shapefiles were made using <strong><small>shp2dta</small></strong>, written by Kevin Crow, as well as <strong><small>mergepoly</small></strong>, written by Robert Picard.</p>
+
+      </section>
+      <footer>
+        <p class="view"><a href="https://github.com/michaelstepner/maptile">View the project on GitHub</a></p>
+        <!--<p class="view"><a href="http://ideas.repec.org/c/boc/bocode/s457709.html">View the project on IDEAS</a></p>-->
+        <!--
+        <p>This project is maintained by <a href="https://github.com/michaelstepner">michaelstepner</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        -->
+      </footer>
+    </div>
+    <script src="/js/scale.fix.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-47128807-1', 'michaelstepner.com');
+      ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        _paq.push(['setTrackerUrl',  'https://api.oasis.sandstorm.io']);
+        _paq.push(['setSiteId', 1]);
+        _paq.push(['setApiToken', 'shH96abt2TbFl5g_vF7kwwdvhD16UlnnATRWt3OKRXm']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://rj3b7exa1k19q7g1djoe.oasis.sandstorm.io/embed.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
+
+  </body>
+</html>
