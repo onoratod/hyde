@@ -72,6 +72,7 @@ blockquote {
 code,
 pre {
   font-family: Menlo, Monaco, "Courier New", monospace;
+  overflow-x: scroll;
 }
 code {
   padding: .25em .5em;
