@@ -3,7 +3,6 @@ layout: test
 title: Testing
 ---
 
-![Python Logo](http://miriamposner.com/classes/dh101f16/wp-content/uploads/sites/5/2016/11/Python_logo.png)
 ## Table of Contents
 
 1. [**Strings**](#strings)
@@ -159,7 +158,7 @@ In [4]: x[3]
 Out[4]: 'h'
 ```
 
-You can also access a range of characters, but remember that Python will not grab the character at the last index. To do this simply use the `[]` brackets and entering your desired ranging starting from **x** going to **y** seperated by `:`: `[x:y]`
+You can also access a range of characters, but remember that Python will not grab the character at the last index. To do this simply use the `[]` brackets and entering your desired ranging starting from **x** going to **y** separated by `:`: `[x:y]`
 
 ```python
 In [5]: x[0:3]
@@ -250,7 +249,7 @@ Now maybe your index is messed up and you'd like to change the index so that it 
 df.index = range(len(df))
 ```
 
-## Miscallaneous <a name = "misc"></a>
+## Miscellaneous <a name = "misc"></a>
 
 For things that don't currently have a home.
 
