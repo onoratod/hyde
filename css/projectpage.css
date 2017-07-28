@@ -44,6 +44,10 @@ a {
   text-decoration:none;
 }
 
+a strong {
+  color: inherit;
+}
+
 a small {
   font-size:11px;
   color:#777;
