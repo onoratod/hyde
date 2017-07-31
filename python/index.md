@@ -5,7 +5,7 @@ title: Python
 
 ## Table of Contents
 
-1. [**Strings**](#strings) 
+1. [**Strings**](#strings)
    - [**Basics**](#stringsbasics)
    - [**Built-in-Functions**](#stringfunc)
 	- [**Slicing**](#stringslicing)
@@ -15,7 +15,7 @@ title: Python
 	- [**Timing your Script**](#timing) 	
 
 
-## Strings <a name = "strings"></a>
+# Strings <a name = "strings"></a>
 
 ### Basics <a name = "stringsbasics"></a>
 
@@ -198,7 +198,7 @@ In [11]: x[-4:] # get the back of the string starting from some point
 Out[11]: 'ippi'
 ```
 
-## DataFrames <a name = "dataframes"></a>
+# DataFrames <a name = "dataframes"></a>
 
 ### Working with Indexes <a name = "indexes"></a>
 
@@ -249,7 +249,7 @@ Now maybe your index is messed up and you'd like to change the index so that it 
 df.index = range(len(df))
 ```
 
-## Miscellaneous <a name = "misc"></a>
+# Miscellaneous <a name = "misc"></a>
 
 For things that don't currently have a home.
 
