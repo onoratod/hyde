@@ -16,7 +16,6 @@ title: Python
 3. [**Miscallaneous**](#misc)
 	- [**Timing your Script**](#timing) 	
 
-***
 
 # Strings <a name = "strings"></a>
 
