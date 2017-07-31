@@ -3,7 +3,9 @@ layout: python
 title: Python
 ---
 
-## Table of Contents
+# Table of Contents
+
+***
 
 1. [**Strings**](#strings)
    - [**Basics**](#stringsbasics)
@@ -14,6 +16,7 @@ title: Python
 3. [**Miscallaneous**](#misc)
 	- [**Timing your Script**](#timing) 	
 
+***
 
 # Strings <a name = "strings"></a>
 
