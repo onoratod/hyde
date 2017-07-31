@@ -20,6 +20,8 @@ title: Python
 
 # Strings <a name = "strings"></a>
 
+***
+
 ### Basics <a name = "stringsbasics"></a>
 
 Strings are an extremely useful and powerful data type in Python. Basically, strings are just a "list" of characters. Although Python does not support a char type its easy to think of them in this way. As you'd expect its pretty straightforward to create a string:
@@ -203,6 +205,8 @@ Out[11]: 'ippi'
 
 # DataFrames <a name = "dataframes"></a>
 
+***
+
 ### Working with Indexes <a name = "indexes"></a>
 
 Sometimes you might find yourself in a situation where you want to change your indeces. There are a lot of things you can do here but some of the issues I run into the most I've outlined below.
@@ -253,6 +257,9 @@ df.index = range(len(df))
 ```
 
 # Miscellaneous <a name = "misc"></a>
+
+
+***
 
 For things that don't currently have a home.
 
