@@ -1,17 +1,17 @@
----
+/*---
 layout: page
 title: Python
----
+---*/
 
 ![Python Logo](http://miriamposner.com/classes/dh101f16/wp-content/uploads/sites/5/2016/11/Python_logo.png)
 ## Table of Contents
 
 1. [**Strings**](#strings)
-   - [**Basics**](#stringsbasics) 
+   - [**Basics**](#stringsbasics)
    - [**Built-in-Functions**](#stringfunc)
-	- [**Slicing**](#stringslicing) 
+	- [**Slicing**](#stringslicing)
 2. [**Pandas DataFrames**](#dataframes)
-	- [**Working with Indexes**](#indexes) 
+	- [**Working with Indexes**](#indexes)
 3. [**Miscallaneous**](#misc)
 	- [**Timing your Script**](#timing) 	
 
@@ -134,7 +134,7 @@ Out[37]: 'h-y-p-h-e-n-a-t-e'
 Although that was a trivial example, we can use `join()` in other clever ways:
 
 ```python
-In [41]: " and ".join(["Doge", "Cate", "Snek"]) 
+In [41]: " and ".join(["Doge", "Cate", "Snek"])
 Out[41]: 'Doge and Cate and Snek'
 ```
 We can also make simple adjustments to strings using `string.replace()` and passing in a few arguments: `string.replace(replace, replace with)`:
@@ -148,9 +148,9 @@ Out[43]: 'Cate is evil'
 
 ### Slicing Strings <a name = "stringslicing"></a>
 
-Python strings have a very useful functionality whereby you can "slice" them. That is to say you can easily grab parts of the strings you want. 
+Python strings have a very useful functionality whereby you can "slice" them. That is to say you can easily grab parts of the strings you want.
 
-To access a single character of a string just use the `[]` brackets and enter the position of the character you want (keep in mind that Python indexes from 0!). 
+To access a single character of a string just use the `[]` brackets and enter the position of the character you want (keep in mind that Python indexes from 0!).
 
 ```python
 In [3]: x = "Much Wow!"
@@ -184,7 +184,7 @@ Similary, we can extract the string from some starting point in the middle all t
 In [7]: x[2:]
 Out[7]: 'ch Wow!'
 ```
-Sometimes, we might have really long strings and we want to access things at the end. We don't want to have to count the exact index from the beginning so that we can access part of the string at the end. In these cases we can use negative indexes to start from the back, with `-1` giving the last character in the string. 
+Sometimes, we might have really long strings and we want to access things at the end. We don't want to have to count the exact index from the beginning so that we can access part of the string at the end. In these cases we can use negative indexes to start from the back, with `-1` giving the last character in the string.
 
 ```python
 In [8]: x = "Mississippi" # uh oh, long string

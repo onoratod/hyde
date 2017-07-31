@@ -1,6 +1,6 @@
 ---
-layout: test
-title: Testing
+layout: python
+title: Python
 ---
 
 ## Table of Contents
