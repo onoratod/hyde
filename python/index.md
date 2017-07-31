@@ -5,7 +5,7 @@ title: Python
 
 ## Table of Contents
 
-1. [**Strings**](#strings)
+1. [**Strings**](#strings) 
    - [**Basics**](#stringsbasics)
    - [**Built-in-Functions**](#stringfunc)
 	- [**Slicing**](#stringslicing)
