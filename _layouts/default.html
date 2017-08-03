@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+  {% if jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
+
   {% include head.html %}
-  
+
   <body onload="ran_col()">
 
     {% include sidebar.html %}
@@ -21,7 +25,7 @@
     </script>
   </body>
 
-  	
+
 
 
 </html>
