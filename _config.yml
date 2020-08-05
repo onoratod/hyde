@@ -6,8 +6,8 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            'Donato Onorato'
-tagline:          
+title:            'DO'
+tagline:          'Donato Onorato'
 description:      'Studying Mathematical Economics <a href = "https://economics.sas.upenn.edu/" target = "_blank">@UPenn</a>. Research Assistant <a href = "https://economics.sas.upenn.edu/" target = "_blank">@UPenn Econ. Dept.</a>'
 url:              http://hyde.getpoole.com
 baseurl:          '/onoratod.github.io/'
