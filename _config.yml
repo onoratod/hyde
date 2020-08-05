@@ -18,8 +18,6 @@ author:
 
 paginate:         5
 
-remote_theme: brettinternet/minimaless
-
 
 # Custom vars
 version:          
