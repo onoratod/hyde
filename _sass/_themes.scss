@@ -1,0 +1,65 @@
+/*******************************************************************************
+ * Themes
+ ******************************************************************************/
+
+:root {
+  --global-bg-color: #{$white-color};
+  --global-text-color: #{$black-color};
+  --global-theme-color: #{$purple-color};
+  --global-hover-color: #{$light-purple-color};
+  --global-footer-bg-color: #{$grey-color-dark};
+  --global-dropdown-hover: #{$grey-color-extralight};
+  --global-footer-text-color: #{$grey-color-light};
+  --global-footer-link-color: #{$white-color};
+  --global-icon-color: #{$black-color};
+  --header-border-color: #{$grey-color-light};
+  --global-sidebar-bg: #{$sidebar-bg};
+
+  .bi-sun {
+    display : none;
+  }
+  .bi-sun-fill {
+    padding-left: 10px;
+    padding-top: 10px;
+    display : block;
+    &:hover {
+      color: $light-purple-color;
+    }
+    &:active {
+      -webkit-transform: scale(0.9, 0.9);
+      transform: scale(0.9, 0.9);
+    }
+  }
+}
+
+html[data-theme='dark'] {
+  --global-bg-color: #{$dm-black};
+  --global-text-color: #{$dm-grey};
+  --global-theme-color: #{$cyan-color};
+  --global-hover-color: #{$light-cyan-color};
+  --global-dropdown-hover: #{$light-dm-black};
+  --global-footer-bg-color: #{$grey-color-light};
+  --global-footer-text-color: #{$grey-color-dark};
+  --global-footer-link-color: #{$dm-black};
+  --global-icon-color: #{$dm-grey};
+  --header-border-color: #{$dm-grey};
+  --global-sidebar-bg: #{$dm-sidebar-bg};
+
+
+
+  .bi-sun {
+    padding-left: 10px;
+    padding-top: 10px;
+    display : block;
+    &:hover {
+      color: $light-cyan-color;
+    }
+    &:active {
+      -webkit-transform: scale(0.9, 0.9);
+      transform: scale(0.9, 0.9);
+    }
+  }
+  .bi-sun-fill {
+    display : none;
+  }
+}

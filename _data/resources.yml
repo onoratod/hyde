@@ -1,0 +1,18 @@
+# This file stores data for the resources tab. Each section and sub-section
+# is listed with the appropriate url to point to.
+- name: Coding
+  links:
+    - name: STATA
+      url: #"/resources/stata/"
+    - name: SAS
+      url: "/resources/sas/"
+
+- name: Econ Research
+  links:
+    - name: Research Assistant
+      url: "/resources/ra/"
+
+- name: Misc
+  links:
+    - name: Cats
+      url: "/resources/catto/"
